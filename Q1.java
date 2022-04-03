@@ -1,30 +1,26 @@
-//Q 1 wap to ask a number and print sum and count and average  of digits 
-
-package Selfevaluationlab2;
+//Q1 Write a Java program to get the character at the given index within the String
+package Stringlab24march;
 
 import java.util.Scanner;
 
 public class Q1 {
 
-	public static void main(String[] args) {
-		int a;
-		Scanner j = new Scanner(System.in);
-		System.out.print("Enter your number = " );
-		a= j.nextInt();
-		int i=0;
-		int sum=0;
-		int count=0;
-		int avg=0;
-		while (a>0) {
-			sum+= a%10;
-			a=a/10;
-			count ++;
-			
-		}
-		System.out.println("sum of digits = "+sum);
-		System.out.println("Count of total numbers in integer = "+count);
-		System.out.println("average are = "+sum/count);
+	void indexatplace() {
+		String a;
+		Scanner aScanner=new Scanner(System.in);
+		System.out.println("Enter your string");
+		a=aScanner.next();
 		
+		int lenght=a.length();
+		int i;
+		for (i=0;i<a.length();i++) {
+			System.out.println(i+ " " +a.charAt(i));
+		}
+	}
+	public static void main(String[] args) {
+	Q1 kQ1=new Q1();
+	kQ1.indexatplace();
+
 	}
 
 }
